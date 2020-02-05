@@ -1,13 +1,6 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import InputBase from '@material-ui/core/InputBase';
 import { createStyles, fade, Theme, makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -69,8 +62,7 @@ export default function SearchAppBar() {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
-    <Toolbar>
+
     <div className={classes.root}>
      
           <div className={classes.search}>
@@ -88,7 +80,6 @@ export default function SearchAppBar() {
           </div>
       
     </div>
-    </Toolbar>
-    </AppBar>
+
   );
 }
