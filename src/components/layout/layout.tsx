@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./layout.css";
 import "react-bulma-components/dist/react-bulma-components.min.css";
+import Container from '@material-ui/core/Container';
 
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
@@ -14,10 +15,11 @@ import { PageNotFound } from "../page-not-found/page-not-found";
 export class Layout extends Component {
   public render(): JSX.Element {
     return (
-      <div className="layout container is-fullhd">
-        <header className="layout container">
+      // <div className="layout container is-fullhd">
+        <Container maxWidth="xl"> 
+        {/* <header className="layout container">
+        </header> */}
           <Header />
-        </header>
 
         <section className="columns">
           <aside className="column is-2">
@@ -39,7 +41,8 @@ export class Layout extends Component {
         <footer className="content has-text-centered container is-fullhd">
           <Footer />
         </footer>
-      </div>
+        </Container>
+
     );
   }
 }

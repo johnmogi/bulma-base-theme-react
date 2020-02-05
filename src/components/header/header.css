@@ -1,0 +1,6 @@
+.MuiToolbar-gutters img {
+    max-height: 1.75rem;
+    max-height: initial;
+    float: left;
+    max-width: 145px;
+}

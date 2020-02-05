@@ -14,3 +14,8 @@ npm i -g json-server
 json-server products.json --port 3015
 
 nav>.navbar-brand>a.navbar-item>img
+
+npm install @material-ui/core
+npm install typeface-roboto --save
+npm install @material-ui/icons
+
