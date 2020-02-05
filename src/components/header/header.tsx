@@ -1,6 +1,12 @@
 import React from "react";
 import "./header.css";
+import ButtonAppBar from './appbar';
+import Grid from '@material-ui/core/Grid';
+import SearchAppBar from "./search";
 
+
+
+// import { ReactComponent as Logo } from '/assets/images/Logo';
 // Stateless Functional Component
 // שנבנה לא ע"י מחלקה, אלא ע"י פונקציה Component
 // State אין לו
@@ -9,52 +15,17 @@ import "./header.css";
 
 export const Header: React.SFC = () => {
   return (
-    <div className="header">
-      <nav className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
-            <img
-              src="https://bulma.io/images/bulma-logo.png"
-              width="112"
-              height="28"
-              alt="logo"
-            />
-          </a>
 
-          <a
-            role="button"
-            className="navbar-burger burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+    <Grid container spacing={3}>
+        <Grid item xs={6}>
+        <ButtonAppBar />
+        </Grid>
+        <Grid item xs={6}>
+        <SearchAppBar />
 
-        <div id="navbarBasicExample" className="navbar-menu">
-          <div className="navbar-start">
-            <a href="/" className="navbar-item">
-              Home
-            </a>
+        </Grid>
+        </Grid>
 
-            <a className="navbar-item">Products</a>
-          </div>
+)
+  }
 
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a className="button is-light">Log in</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  );
-};

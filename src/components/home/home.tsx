@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Heading } from "../heading/heading";
+import Button from '@material-ui/core/Button';
+// import Modal from '@material-ui/core/Modal';
+
 
 import "./home.css";
 
@@ -16,7 +19,9 @@ export class Home extends Component {
                 )}
               </Heading>
             </h1>
-            <h2 className="subtitle">Medium subtitle</h2>
+            <Button variant="contained" color="primary">
+      Hello World
+    </Button>
           </div>
         </div>
       </section>
